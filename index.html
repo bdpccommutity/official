@@ -667,13 +667,34 @@
   <main style="padding-top:80px;">
     <h1 style="font-family:'Orbitron',sans-serif;font-size:42px;color:#fff;margin-bottom:12px;letter-spacing:1px;">ANNOUNCEMENTS</h1>
     <div style="width:80px;height:2px;background:#FF6B00;margin-bottom:32px;"></div>
+    <!-- 30 MAR 2026 -->
+    <div class="ann-card">
+      <div class="ann-card-header">
+        <h2>Announcement</h2>
+        <span class="date-badge">30 MAR 2026</span>
+      </div>
+      <div class="ann-body">
+        ধরুন আপনি একজন PC checker, আর আপনার সামনে একজন player বসে আছে। তার PC-তে কোনো ধরনের cheat interface দেখা যাচ্ছে না—না কোনো menu, না কোনো overlay, সবকিছু একদম clean মনে হচ্ছে। কিন্তু যখন আপনি VirusTotal-এ file check করেন, তখন detection দেখা যাচ্ছে। এখন প্রশ্ন হলো—সে কি সত্যিই cheater, নাকি পুরোপুরি innocent? এই confusion টাই আমরা আজ বোঝার চেষ্টা করবো।
+
+সাধারণত basic cheat গুলো চিনে ফেলা সহজ, কারণ এগুলোর interface, menu বা overlay থাকে, যেগুলো PC checker এবং আশেপাশের মানুষ সহজেই দেখতে পারে। কিন্তু advanced cheat গুলো সম্পূর্ণ আলাদা। এগুলোর কোনো visible UI থাকে না, এগুলো background বা service-এর মতো run করে। প্রয়োজন হলে শুধু একটি button press করলেই game-এ inject হয়, আর কাজ শেষ হলে আবার disappear হয়ে যেতে পারে। অর্থাৎ এগুলো চোখে দেখা যায় না, কিন্তু system-এর ভিতরে থেকেই কাজ করে।
+
+এই ধরনের invisible cheat ধরার জন্য ব্যবহার করা হয় VirusTotal, hash checking এবং signature analysis-এর মতো tools। যদি কোনো file-এ multiple engine detection দেয়, তাহলে সেটাকে clearly suspicious ধরা হয়। তবে এখান থেকেই আসল confusion শুরু হয়, কারণ প্রতিটি detection মানেই cheat নয়। অনেক সময় malware বা virus-ও detection দিতে পারে, 
+
+একটা সহজ উদাহরণ দিয়ে বিষয়টা বোঝা যাক। ধরুন, আপনার বাসায় পুলিশ এসে একটি মদের বোতল খুঁজে পেল, আর আপনি বললেন—“আমি এটা রাখিনি, কেউ আমাকে ফাঁসানোর জন্য রেখে গেছে।” এখন প্রশ্ন হলো, শুধু এই কথার উপর ভিত্তি করে কি আপনি পুরোপুরি নির্দোষ প্রমাণিত হবেন? একজন সচেতন নাগরিক হিসেবে আপনার জায়গায় পাওয়া জিনিসের দায়িত্ব আপনারই। ঠিক একইভাবে, আপনার PC-তে যদি কোনো suspicious file পাওয়া যায় এবং সেটার detection ও আসে, তাহলে শুধু “আমি জানি না” বললেই দায় এড়ানো যায় না।
+
+আসলে PC checking-এর সময় সিদ্ধান্ত কোনো একটিমাত্র বিষয়ের উপর নির্ভর করে না। এখানে file location, execution trace, running process, detection count (বিশেষ করে যদি multiple engine detect করে) এবং overall behavior pattern—সবকিছু মিলিয়ে analysis করা হয়। অর্থাৎ পুরো evidence বিবেচনা করেই final judgement নেওয়া হয়।
+
+শেষ কথা হলো—Invisible cheat detect করা কঠিন হলেও অসম্ভব নয়। আর সবচেয়ে গুরুত্বপূর্ণ বিষয় হলো, system-এর দায়িত্ব সবসময় তার owner-এর উপরই থাকে। আপনার PC clean রাখা আপনার নিজের দায়িত্ব।
+      </div>
+    </div>
 
     <!-- 28 MAR 2026 -->
     <div class="ann-card">
       <div class="ann-card-header">
         <h2>Custom OS Security Risk & Official Windows Requirement</h2>
         <span class="date-badge">28 MAR 2026</span>
-      </div>
+
+     </div>
       <div class="ann-body">
         <p>Custom Windows-এ অনেক সময় important services disable করা থাকে এবং system logs modify বা disable করা হয়। বিশেষ করে old version custom Windows-এ দেখা গেছে যে কখনো কখনো Event Logs automatically clear হয়ে যায়।</p>
         <div class="alert-box">উদাহরণস্বরূপ, <strong>Atlas OS</strong>-এর old version, <strong>Revi OS</strong>-এর old version এবং এ ধরনের আরো বিভিন্ন custom OS-এ এই ধরনের issue লক্ষ্য করা গেছে।</div>
@@ -706,9 +727,8 @@
         <p>আমরা এই নিয়মগুলি বাস্তবায়নে সিরিয়াস এবং সমস্ত উল্লংঘনকারীদের বিরুদ্ধে কঠোর ব্যবস্থা নেব। Fair Play এবং সততা আমাদের Community এর মূল ভিত্তি।</p>
         <div class="orange-box"><p>যেকোনো প্রশ্ন বা আবেদনের জন্য আমাদের Discord Server এ যোগাযোগ করুন।</p></div>
       </div>
-    </div>
-
-    <a href="https://discord.gg/bangladesh-pc-checking-community-1306698066622943383" target="_blank" rel="noopener noreferrer" class="discord-support-btn">
+      
+     <a href="https://discord.gg/bangladesh-pc-checking-community-1306698066622943383" target="_blank" rel="noopener noreferrer" class="discord-support-btn">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3671a19.8062 19.8062 0 00-4.885-1.515.0741.0741 0 00-.0785.0371c-.211.3671-.445.8447-.608 1.2253a18.268 18.268 0 00-5.487 0 12.64 12.64 0 00-.617-1.2253.077.077 0 00-.079-.037 19.7354 19.7354 0 00-4.885 1.515.0699.0699 0 00-.032.0277C1.053 8.858.007 12.9392 1.191 16.8226a.0824.0824 0 00.033.0576c2.007 1.6044 3.926 2.5822 5.8245 3.2236a.0791.0791 0 00.085-.028 13.994 13.994 0 001.226-1.994.076.076 0 00-.042-.106 13.588 13.588 0 01-1.938-.924.077.077 0 01-.008-.128 10.33 10.33 0 00.372-.296.0755.0755 0 01.078-.01c4.067 1.857 8.476 1.857 12.496 0a.075.075 0 01.079.009c.12.089.246.195.373.297a.077.077 0 01-.006.127 12.722 12.722 0 01-1.939.924.076.076 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.963 19.963 0 005.831-3.235.077.077 0 00.032-.057c1.272-4.049.223-7.569-1.035-10.514a.064.064 0 00-.03-.028zM8.02 13.2823c-.914 0-1.667-.838-1.667-1.866 0-1.027.738-1.866 1.667-1.866.929 0 1.667.839 1.667 1.866 0 1.028-.738 1.866-1.667 1.866zm7.975 0c-.914 0-1.667-.838-1.667-1.866 0-1.027.738-1.866 1.667-1.866.929 0 1.667.839 1.667 1.866 0 1.027-.738 1.866-1.667 1.866z"/></svg>
       Join Discord Support Server
     </a>
